@@ -19,16 +19,17 @@ from compose.cli.errors import UserError
 
 log = logging.getLogger(__name__)
 
-TEMPLATE = "https://github.com/akretion/voodoo-template.git"
+TEMPLATE = "https://github.com/mtelahun/voodoo-template.git"
 ODOO_GIT = "https://github.com/OCA/OCB.git"
 
 DEFAULT_CONF = {
     "shared_eggs": True,
     "shared_odoo": False,
     "gitconfig": "~/.gitconfig",
-    "used_odoo_repo": "oca",
+    "used_odoo_repo": "clearerp",
     "odoo_repo_list": {
         "oca": "https://github.com/oca/ocb.git",
+        "clearerp": "https://mtelahun@bitbucket.org/clearictopenerp/clearerp.git",
     },
 }
 
